@@ -12,6 +12,8 @@ const options = {
   rootMargin: "0px 0px 0px 0px",
   threshold: 1.0,
 };
+const observer = new IntersectionObserver(onLoadMoreBtn, options);
+
 
 console.log(imagesApiservice);
 
@@ -49,8 +51,9 @@ function onSearchForm(evt) {
       window.scrollBy({
         behavior: "smooth",
       });
-      const observer = new IntersectionObserver(onLoadMoreBtn, options);
-      observer.observe(observerEl);
+      setTimeout(() => {
+        observer.observe(observerEl);
+      }, 500)
     })
     .catch((err) => Notify.failure(err.message));
 }
@@ -66,6 +69,7 @@ function onLoadMoreBtn(evt) {
       console.log(isShown >= data.totalHits);
       if (isShown >= data.totalHits) {
         onReachedResults();
+        observer.unobserve(observerEl)
       }
 
       console.log(data);
