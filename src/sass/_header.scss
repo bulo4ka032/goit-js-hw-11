@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+    background-color: rgba(116, 41, 166, 0.713);
+}
+
+.search-input {
+    width: 400px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 5px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
