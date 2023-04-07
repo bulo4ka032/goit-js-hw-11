@@ -70,6 +70,7 @@ function onLoadMoreBtn(evt) {
       if (isShown >= data.totalHits) {
         onReachedResults();
         observer.unobserve(observerEl)
+        return;
       }
 
       console.log(data);
