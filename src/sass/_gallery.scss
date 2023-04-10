@@ -12,7 +12,6 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 8px;
   }
   
   .gallery__item {
@@ -47,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 0;
+    padding: 8px;
 }
 
 .photo-card {
@@ -63,9 +62,9 @@
 
 .info {
     display: flex;
-    padding: 8px 8px;
+    padding: 2px 8px;
     justify-content: space-between;
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .info-item {
