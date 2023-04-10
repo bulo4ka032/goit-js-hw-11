@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Notify } from "notiflix";
 
 export  class ImagesApiService {
   static BASE_URL = "https://pixabay.com/api/";

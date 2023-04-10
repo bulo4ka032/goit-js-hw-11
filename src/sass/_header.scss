@@ -1,15 +1,22 @@
 .header {
     display: flex;
     justify-content: center;
-    padding: 10px 30px;
-    background-color: rgba(116, 41, 166, 0.713);
-}
+    padding: 15px 30px;
+    box-shadow: inset rgba(255,255,255,0.2) 6px  6px 9px 2px,
+    inset rgba(0,0,0,0.2)      -2px -2px 9px 2px;
+    background: rgb(253,247,195);
+    background: linear-gradient(90deg, rgba(253,247,195,1) 0%, rgba(255,222,180,1) 25%, rgba(255,180,180,1) 50%, rgba(178,164,255,1) 99%);}
 
 .search-input {
     width: 400px;
     padding: 8px 15px;
     border-radius: 5px;
     border: none;
+}
+
+.search-input:focus {
+    border: none;
+    outline: none;
 }
 
 .search-form {

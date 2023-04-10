@@ -67,6 +67,7 @@ function onLoadMoreBtn(evt) {
       isShown = ((imagesApiservice.page - 2) * 40) + 1;
       console.log(isShown);
       console.log(isShown >= data.totalHits);
+      
       if (isShown >= data.totalHits) {
         onReachedResults();
         observer.unobserve(observerEl)
